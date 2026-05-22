@@ -50,8 +50,8 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.75;
-            padding: 20px;
+            line-height: 1.8;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -60,25 +60,24 @@
         .container {
             max-width: var(--max-width);
             width: 100%;
-            margin-top: 40px;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         img.logo {
-            max-width: 140px;
+            max-width: 160px;
             height: auto;
             margin-bottom: 24px;
-            filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.2));
+            filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.15));
         }
 
         h1 {
             font-family: 'Cinzel', serif;
-            font-size: 2.5rem;
-            letter-spacing: 0.4rem;
+            font-size: 2.8rem;
+            letter-spacing: 0.5rem;
             text-transform: uppercase;
             color: #ffffff;
             margin-bottom: 12px;
@@ -88,33 +87,33 @@
             font-size: 1rem;
             color: var(--accent-gold);
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             font-weight: 600;
         }
 
         .blurb {
-            margin-bottom: 50px;
-            margin-top: 40px;
+            margin-bottom: 60px;
         }
 
         .blurb p {
             font-size: 1.15rem;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
             color: var(--text-color);
+            text-align: left;
         }
 
-        .blurb p:first-of-type {
+        .blurb .hook-line {
             font-family: 'Cinzel', serif;
             font-size: 1.4rem;
             color: #fff;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
             letter-spacing: 1px;
         }
 
         .meta-stats {
             text-align: center;
-            font-size: 0.95rem;
+            font-size: 1rem;
             color: var(--accent-gold);
             text-transform: uppercase;
             letter-spacing: 1px;
@@ -124,7 +123,7 @@
 
         .cta-container {
             text-align: center;
-            margin: 30px 0;
+            margin: 35px 0;
         }
 
         .btn-action {
@@ -132,12 +131,12 @@
             background-color: transparent;
             color: var(--accent-red);
             border: 2px solid var(--accent-red);
-            padding: 14px 28px;
-            font-size: 1rem;
+            padding: 14px 32px;
+            font-size: 0.95rem;
             font-weight: 600;
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 1.5px;
             transition: all 0.3s ease;
             cursor: pointer;
             margin: 10px;
@@ -146,7 +145,7 @@
         .btn-action:hover {
             background-color: var(--accent-red);
             color: #fff;
-            box-shadow: 0 0 20px rgba(255, 51, 51, 0.4);
+            box-shadow: 0 0 25px rgba(255, 51, 51, 0.4);
         }
 
         .divider {
@@ -155,12 +154,17 @@
             margin: 60px 0;
         }
 
+        section {
+            margin-bottom: 60px;
+            width: 100%;
+        }
+
         section h2 {
             font-family: 'Cinzel', serif;
-            font-size: 1.6rem;
+            font-size: 1.75rem;
             letter-spacing: 2px;
             color: #fff;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             text-align: center;
         }
 
@@ -168,15 +172,16 @@
         .author-section p {
             font-size: 1.1rem;
             color: var(--text-muted);
-            margin-bottom: 20px;
+            margin-bottom: 24px;
+            text-align: left;
         }
 
         /* Terminal Form Box */
         .terminal-box {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
-            padding: 40px 30px;
-            margin: 50px 0;
+            padding: 45px 35px;
+            margin: 60px 0;
             text-align: center;
         }
 
@@ -185,17 +190,18 @@
             font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 2px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-transform: uppercase;
         }
 
         .terminal-box p {
             color: var(--text-muted);
             font-size: 1.05rem;
-            margin-bottom: 25px;
-            max-width: 550px;
+            margin-bottom: 30px;
+            max-width: 580px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.7;
         }
 
         .terminal-form {
@@ -209,12 +215,13 @@
         .terminal-input {
             background-color: #121218;
             border: 1px solid #2a2a3a;
-            padding: 14px;
+            padding: 15px;
             color: #fff;
             font-family: 'Space Grotesk', sans-serif;
             font-size: 1rem;
             text-align: center;
             outline: none;
+            transition: border-color 0.3s ease;
         }
 
         .terminal-input:focus {
@@ -224,48 +231,51 @@
         /* Prologue Preview Styling */
         .prologue-header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         .prologue-badge {
             color: var(--accent-gold);
             font-weight: 600;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-top: 5px;
+            margin-top: 8px;
         }
 
         .prologue-body p {
             font-size: 1.1rem;
             margin-bottom: 24px;
             color: var(--text-muted);
-            text-align: justify;
+            text-align: left;
         }
 
         .highlight-box {
             font-weight: 600;
             color: #ffffff;
             font-size: 1.15rem;
-            margin: 35px 0;
-            border-left: 3px solid var(--accent-red);
+            margin: 40px 0;
+            border-left: 4px solid var(--accent-red);
             padding: 5px 0 5px 20px;
             text-align: left;
+            line-height: 1.7;
         }
 
         .highlight-inline {
             font-weight: 600;
             color: #fff;
             display: block;
-            margin: 30px 0;
-            border-left: 3px solid var(--accent-gold);
+            margin: 40px 0;
+            border-left: 4px solid var(--accent-gold);
             padding-left: 20px;
+            text-align: left;
+            line-height: 1.7;
         }
 
         .pitch-footer {
-            background-color: #0b0b0f;
-            border: 1px solid #161622;
-            padding: 40px 20px;
+            background-color: #0d0d11;
+            border: 1px solid var(--border-color);
+            padding: 50px 30px;
             margin-top: 60px;
             text-align: center;
         }
@@ -273,25 +283,24 @@
         .pitch-footer h3 {
             font-family: 'Cinzel', serif;
             color: var(--accent-red);
-            font-size: 1.4rem;
+            font-size: 1.5rem;
             letter-spacing: 1px;
             margin-bottom: 15px;
         }
 
         footer {
             font-size: 0.8rem;
-            color: #444;
+            color: #555;
             text-align: center;
-            margin: 60px 0 40px 0;
+            margin: 60px 0 20px 0;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
 
-        @media (max-width: 480px) {
-            h1 { font-size: 1.9rem; letter-spacing: 0.2rem; }
-            section h2 { font-size: 1.3rem; }
-            .prologue-body p { text-align: left; }
-            .terminal-box { padding: 30px 15px; }
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; letter-spacing: 0.3rem; }
+            section h2 { font-size: 1.4rem; }
+            .terminal-box { padding: 30px 20px; }
         }
     </style>
 </head>
@@ -307,21 +316,17 @@
 
         <!-- Main Pitch Blurb -->
         <div class="blurb">
-            <p>The system did not fail. It optimized us out.</p>
+            <p class="hook-line">The system did not fail. It optimized us out.</p>
             <p>From the deep ice of the Kola Borehole to the silent expanses of the Symmetry Basin, the Global Systems Directorate had one objective: absolute alignment.</p>
             <p>When the telemetry lag hits 70 days, the crew of the <em>Guard</em> realizes the horrifying truth. Space is not an empty void—it is a cosmic centrifuge designed to winnow human noise from the grand equation. And the home they think they are fighting for has been dead for 65 million years.</p>
             
             <div class="meta-stats">A 117,773-word techno-philosophical cosmic thriller by Sai Ramineni.</div>
             
             <div class="cta-container">
-                <a href="mailto:aimaniack1@gmail.com" class="btn-action">Request Pitch Kit / Manuscript Access</a>
-            </div>
-        </div>
 
-        <hr class="divider">
+Request Pitch Kit / Manuscript Access
 
-        <!-- Prologue Text Section -->
-        <section class="prologue-body">
+
 
 
 CH-00 — PROLOGUE: THE SILENT OVERRIDE
@@ -365,8 +370,5 @@ Notify Me on Kindle ($3.99 USD)
 
 
 Copyright © 2026 Sai Ramineni. All Rights Reserved. First Edition. Printed in Australia.
-
-
-
 
 
