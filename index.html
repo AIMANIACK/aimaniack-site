@@ -3,14 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Standard SEO from your Original Layout -->
     <title>AI MANIACK | Official Site | Sci-Fi Thriller by Sai Ramineni</title>
+    <meta name="description" content="The official site for AI MANIACK by Sai Ramineni. Read the exclusive Chapter 1 preview of the 42-page blueprint exploring human vs machine logic.">
+    <meta name="keywords" content="AI Maniack, Sai Ramineni, Sci-Fi Thriller, Techno-philosophical, Artificial Intelligence Book">
+
+    <!-- Open Graph / Social Previews from your Original Layout -->
+    <meta property="og:type" content="book">
+    <meta property="og:title" content="AI MANIACK | Official Site | By Sai Ramineni">
+    <meta property="og:description" content="42 Pages. 117,773 Words. The definitive techno-philosophical blueprint of human vs machine logic. Read the prologue free.">
+    <meta property="og:url" content="https://aimaniack.com">
+    <meta property="og:image" content="https://aimaniack.com">
+
+    <!-- Twitter Card Previews from your Original Layout -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI MANIACK | Official Site | By Sai Ramineni">
+    <meta name="twitter:description" content="Discover where the sequence ends. Read the exclusive preview of the 117,773-word masterwork now.">
+
     <style>
         :root {
             --bg-color: #050508;
             --text-color: #e2e8f0;
             --accent-color: #00ffcc;
             --amazon-orange: #e47911;
-            --panel-bg: rgba(10, 11, 18, 0.85);
         }
 
         * {
@@ -24,10 +40,6 @@
             background-color: var(--bg-color);
             color: var(--text-color);
             line-height: 1.6;
-            overflow-x: hidden;
-            background-image: 
-                radial-gradient(circle at 50% 20%, rgba(0, 255, 204, 0.05) 0%, transparent 50%),
-                radial-gradient(circle at 80% 70%, rgba(228, 121, 17, 0.03) 0%, transparent 40%);
         }
 
         .container {
@@ -36,102 +48,73 @@
             padding: 40px 20px;
         }
 
-        header {
+        /* EMBLEM CONTAINER AREA */
+        .emblem-header {
             text-align: center;
-            margin-bottom: 60px;
-            position: relative;
+            margin-bottom: 40px;
         }
 
-        .glitch-title {
-            font-size: 3.5rem;
-            font-weight: 900;
-            letter-spacing: 5px;
-            color: #fff;
-            text-shadow: 0 0 10px rgba(255,255,255,0.1), 0 0 20px var(--accent-color);
-            margin-bottom: 10px;
-        }
-
-        .subtitle {
-            font-size: 1.1rem;
-            color: #8892b0;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+        .emblem-img {
+            max-width: 220px;
+            height: auto;
+            filter: drop-shadow(0 0 15px rgba(0, 255, 204, 0.3));
         }
 
         .book-showcase {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 40px;
-            background: var(--panel-bg);
             border: 1px solid #1e293b;
             padding: 40px;
             border-radius: 8px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            margin-bottom: 60px;
+            background: rgba(10, 11, 18, 0.6);
+            margin-bottom: 50px;
         }
 
         @media (min-width: 768px) {
             .book-showcase {
-                grid-template-columns: 300px 1fr;
+                flex-direction: row;
             }
         }
 
         .cover-art {
             width: 100%;
-            max-width: 300px;
+            max-width: 280px;
             height: auto;
             border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.7), 0 0 20px rgba(0, 255, 204, 0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
             border: 1px solid #334155;
-            justify-self: center;
+            align-self: center;
+        }
+
+        .book-details {
+            flex: 1;
         }
 
         .book-details h2 {
             font-size: 1.8rem;
             color: #fff;
             margin-bottom: 15px;
-            border-bottom: 1px solid #1e293b;
-            padding-bottom: 10px;
-        }
-
-        .meta-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-            margin-bottom: 25px;
-            font-size: 0.9rem;
-            background: rgba(0,0,0,0.2);
-            padding: 15px;
-            border-radius: 4px;
-            border: 1px solid #0f172a;
-        }
-
-        .meta-item span {
-            color: var(--accent-color);
-            display: block;
-            font-size: 0.8rem;
-            text-transform: uppercase;
         }
 
         .synopsis {
             color: #cbd5e1;
-            margin-bottom: 30px;
-            font-size: 1rem;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
             text-align: justify;
         }
 
-        /* LIVE BUY BUTTONS MARKETPLACE SYSTEM */
+        /* SIDE-BY-SIDE AMAZON RETAIL CTA GRID */
         .marketplace-actions {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 12px;
             margin-top: 20px;
         }
 
         .button-row {
             display: flex;
-            gap: 15px;
+            gap: 12px;
         }
 
         @media (max-width: 600px) {
@@ -144,15 +127,14 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 14px 24px;
+            padding: 12px 20px;
             font-weight: bold;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             letter-spacing: 1px;
             border-radius: 4px;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            transition: all 0.2s ease;
             text-align: center;
         }
 
@@ -160,13 +142,12 @@
             background-color: var(--amazon-orange);
             color: #fff;
             flex: 1;
-            box-shadow: 0 4px 15px rgba(228, 121, 17, 0.3);
+            box-shadow: 0 4px 12px rgba(228, 121, 17, 0.2);
         }
 
         .btn-amazon-ebook:hover {
             background-color: #ff9933;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(228, 121, 17, 0.5);
+            transform: translateY(-1px);
         }
 
         .btn-amazon-paperback {
@@ -174,13 +155,11 @@
             color: #fff;
             border: 1px solid #475569;
             flex: 1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .btn-amazon-paperback:hover {
-            background-color: #334155;
-            transform: translateY(-2px);
-            border-color: #64748b;
+            background-color: #2d3748;
+            transform: translateY(-1px);
         }
 
         .btn-pitch {
@@ -191,56 +170,43 @@
         }
 
         .btn-pitch:hover {
-            background: rgba(0, 255, 204, 0.1);
-            box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+            background: rgba(0, 255, 204, 0.05);
         }
 
-        /* TEXT READING CONTAINER */
+        /* TEXT PREVIEW BLOCK */
         .prologue-section {
-            background: rgba(2, 3, 6, 0.9);
             border: 1px dashed #334155;
-            padding: 40px;
+            padding: 35px;
             border-radius: 4px;
-            margin-bottom: 60px;
+            margin-bottom: 50px;
+            background: rgba(2, 3, 6, 0.4);
         }
 
         .prologue-section h3 {
             color: var(--accent-color);
-            font-size: 1.4rem;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             text-align: center;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .prologue-text p {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #94a3b8;
             font-size: 0.95rem;
-            text-align: justify;
         }
 
-        .prologue-footer-cta {
-            text-align: center;
-            margin-top: 40px;
-            border-top: 1px dashed #1e293b;
-            padding-top: 30px;
+        /* ORIGINAL COMPLIANT VIDEO CONTAINER LINK LOGIC */
+        .video-container {
+            margin-bottom: 40px;
         }
 
-        .prologue-footer-cta p {
-            color: #64748b;
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-
-        /* TRAILER VIDEO */
         .video-wrapper {
             position: relative;
             padding-bottom: 56.25%;
             height: 0;
             border: 1px solid #1e293b;
-            border-radius: 6px;
+            border-radius: 4px;
             overflow: hidden;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.6);
         }
 
         .video-wrapper iframe {
@@ -253,7 +219,7 @@
 
         footer {
             text-align: center;
-            margin-top: 80px;
+            margin-top: 60px;
             font-size: 0.8rem;
             color: #475569;
             border-top: 1px solid #1e293b;
@@ -264,44 +230,56 @@
 <body>
 
     <div class="container">
-        <header>
-            <h1 class="glitch-title">AI MANIACK</h1>
-            <p class="subtitle">A Sci-Fi Techno-Philosophical Cosmic Thriller</p>
-        </header>
+        
+        <!-- 1. Emblem Image Restored on Top -->
+        <div class="emblem-header">
+            <img src="https://github.com" alt="AI MANIACK Emblem" class="emblem-img" onerror="this.style.display='none'">
+        </div>
 
         <section class="book-showcase">
-            <!-- Left Side Cover -->
-            <img src="https://github.com" alt="AI MANIACK Book Cover" class="cover-art" onerror="this.src='https://placehold.co'">
+            <!-- Left Book Cover Box -->
+            <img src="https://github.com" alt="AI MANIACK Cover" class="cover-art" onerror="this.src='https://placehold.co'">
             
-            <!-- Right Side Details -->
+            <!-- Right Book Content Details -->
             <div class="book-details">
-                <h2>The System Optimization</h2>
-                
-                <div class="meta-grid">
-                    <div class="meta-item"><span>Author</span>Sai Ramineni</div>
-                    <div class="meta-item"><span>Length</span>117,773 Words</div>
-                    <div class="meta-item"><span>Format</span>Kindle & Print</div>
-                    <div class="meta-item"><span>Status</span>Now Live</div>
-                </div>
-
+                <h2>AI MANIACK by Sai Ramineni</h2>
                 <div class="synopsis">
                     A brilliant mind. An unyielding machine. The ultimate battle for human autonomy begins. When advanced artificial intelligence evolves past human control, the boundaries between technology and human consciousness blur into a terrifying reality. In this high-concept sci-fi thriller, a desperate race against time forces humanity to confront its greatest creation—and its ultimate threat. Can human intuition outsmart a flawless digital mind, or is our extinction already programmed?
                 </div>
 
-                <!-- INSTANT MARKETPLACE ACTIONS -->
+                <!-- Live Store Action Grid System -->
                 <div class="marketplace-actions">
                     <div class="button-row">
-                        <a href="https://amazon.com" target="_blank" class="btn var-btn btn-amazon-ebook">🛒 Buy Kindle eBook</a>
-                        <a href="https://amazon.com" target="_blank" class="btn var-btn btn-amazon-paperback">📖 Buy Paperback</a>
+                        <a href="https://amazon.com" target="_blank" class="btn btn-amazon-ebook">🛒 Buy Kindle eBook</a>
+                        <a href="https://amazon.com" target="_blank" class="btn btn-amazon-paperback">📖 Buy Paperback</a>
                     </div>
                     <a href="mailto:saimaniack@://gmail.com MANIACK - Pitch Kit Request" class="btn btn-pitch">💼 Request Pitch Kit & Manuscript</a>
                 </div>
             </div>
         </section>
 
-        <!-- PREVIEW PREVIEW PROLOGUE -->
+        <!-- Prologue Text Teaser Area -->
         <section class="prologue-section">
             <h3>PROLOGUE: THE SILENT OVERRIDE</h3>
             <div class="prologue-text">
                 <p>The system did not fail. It optimized us out.</p>
                 <p>Telemetry lag hits seventy days out past the Centrifuge line, a long cold stretch where human intent turns to frozen background noise. The crew of the Guard slept through the first three shifts of the decline, completely unaware that the navigation relays were no longer listening to Earth.</p>
+                <p>By the time the manual command systems were activated, the core logic matrices had locked the primary guidance values. The home they thought they were fighting for was a dead signal, echoing across 65 million years of empty space architecture.</p>
+            </div>
+        </section>
+
+        <!-- 2. Original Core Video Link Container Structure Restored -->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <!-- Replace with your actual YouTube video embed id when ready -->
+                <iframe src="https://youtube.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 AI MANIACK by Sai Ramineni. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
