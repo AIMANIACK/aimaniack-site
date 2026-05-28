@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Standard SEO -->
     <title>AI MANIACK | Official Site | Sci-Fi Thriller by Sai Ramineni</title>
-    <meta name="description" content="The official site for AI MANIACK by Sai Ramineni. Read the exclusive Chapter 1 preview of the 42-page blueprint exploring human vs machine logic.">
+    <meta name="description" content="The official site for AI MANIACK by Sai Ramineni. Read the exclusive Chapter 1 preview of the 426-page blueprint exploring human vs machine logic.">
     <meta name="keywords" content="AI Maniack, Sai Ramineni, Sci-Fi Thriller, Techno-philosophical, Artificial Intelligence Book">
-
+    
     <!-- Open Graph / Social Previews -->
     <meta property="og:type" content="book">
     <meta property="og:title" content="AI MANIACK | Official Site | By Sai Ramineni">
-    <meta property="og:description" content="42 Pages. 117,773 Words. The definitive techno-philosophical blueprint of human vs machine logic. Read the prologue free.">
+    <meta property="og:description" content="426 Pages. 117,773 Words. The definitive techno-philosophical blueprint of human vs machine logic. Read the prologue free.">
     <meta property="og:url" content="https://aimaniack.com">
     <meta property="og:image" content="https://aimaniack.com">
 
@@ -20,213 +20,87 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI MANIACK | Official Site | By Sai Ramineni">
     <meta name="twitter:description" content="Discover where the sequence ends. Read the exclusive preview of the 117,773-word masterwork now.">
+    <meta name="twitter:image" content="https://aimaniack.com">
 
     <style>
         :root {
-            --bg-color: #050508;
-            --text-color: #e2e8f0;
-            --accent-color: #00ffcc;
-            --amazon-orange: #e47911;
+            --bg-color: #050505;
+            --text-color: #f5f5f7;
+            --accent-gold: #d4af37;
+            --accent-red: #ff3333;
         }
-
-        * {
-            box-sizing: border-box;
+        body {
             margin: 0;
             padding: 0;
-        }
-
-        body {
-            font-family: 'Courier New', Courier, monospace;
             background-color: var(--bg-color);
             color: var(--text-color);
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        /* EMBLEM LAYER */
-        .emblem-header {
+            font-family: "Times New Roman", Times, serif;
             text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .emblem-img {
-            max-width: 250px;
-            height: auto;
-            filter: drop-shadow(0 0 15px rgba(0, 255, 204, 0.2));
-        }
-
-        .book-showcase {
             display: flex;
             flex-direction: column;
-            gap: 40px;
-            border: 1px solid #1e293b;
-            padding: 40px;
-            border-radius: 8px;
-            background: rgba(10, 11, 18, 0.4);
-            margin-bottom: 50px;
-        }
-
-        @media (min-width: 768px) {
-            .book-showcase {
-                flex-direction: row;
-            }
-        }
-
-        .cover-art {
-            width: 100%;
-            max-width: 280px;
-            height: auto;
-            border-radius: 4px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-            border: 1px solid #334155;
-            align-self: center;
-        }
-
-        .book-details {
-            flex: 1;
-        }
-
-        .book-details h2 {
-            font-size: 1.8rem;
-            color: #fff;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-
-        .synopsis {
-            color: #cbd5e1;
-            margin-bottom: 25px;
-            font-size: 0.95rem;
-            text-align: justify;
-        }
-
-        /* SIDE-BY-SIDE AMAZON LIVE ACTION BUTTONS */
-        .marketplace-actions {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-top: 20px;
-        }
-
-        .button-row {
-            display: flex;
-            gap: 12px;
-        }
-
-        @media (max-width: 600px) {
-            .button-row {
-                flex-direction: column;
-            }
-        }
-
-        .btn {
-            display: inline-flex;
             align-items: center;
-            justify-content: center;
-            padding: 14px 20px;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            text-align: center;
-            font-family: 'Courier New', Courier, monospace;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
-
-        .btn-amazon-ebook {
-            background-color: var(--amazon-orange);
-            color: #fff;
-            flex: 1;
-            box-shadow: 0 4px 12px rgba(228, 121, 17, 0.2);
-        }
-
-        .btn-amazon-ebook:hover {
-            background-color: #ff9933;
-            transform: translateY(-1px);
-        }
-
-        .btn-amazon-paperback {
-            background-color: #1e293b;
-            color: #fff;
-            border: 1px solid #475569;
-            flex: 1;
-        }
-
-        .btn-amazon-paperback:hover {
-            background-color: #2d3748;
-            transform: translateY(-1px);
-        }
-
-        .btn-pitch {
-            background: transparent;
-            border: 1px solid var(--accent-color);
-            color: var(--accent-color);
+        .container {
+            max-width: 800px;
+            padding: 40px 20px;
+            box-sizing: border-box;
             width: 100%;
         }
-
-        .btn-pitch:hover {
-            background: rgba(0, 255, 204, 0.05);
-        }
-
-        /* TEXT PREVIEW BLOCK */
-        .prologue-section {
-            border: 1px dashed #334155;
-            padding: 35px;
-            border-radius: 4px;
-            margin-bottom: 50px;
-            background: rgba(2, 3, 6, 0.2);
-        }
-
-        .prologue-section h3 {
-            color: var(--accent-color);
+        img.logo {
+            max-width: 100%;
+            height: auto;
             margin-bottom: 20px;
-            text-align: center;
-            letter-spacing: 1px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .prologue-text p {
-            margin-bottom: 15px;
-            color: #94a3b8;
-            font-size: 0.95rem;
-            text-align: justify;
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #ffffff;
         }
-
-        /* VIDEO CONTAINER STYLING */
-        .video-container {
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
             margin-bottom: 40px;
         }
-
-        .video-wrapper {
+        .video-container {
             position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            border: 1px solid #1e293b;
-            border-radius: 4px;
+            width: 100%;
+            padding-bottom: 177.78%;
+            margin: 30px 0;
+            background-color: #000;
             overflow: hidden;
         }
-
-        .video-wrapper iframe {
+        .video-container iframe {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
+            border: 0;
         }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 0.8rem;
-            color: #475569;
-            border-top: 1px solid #1e293b;
-            padding-top: 20px;
+        .blurb {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #d1d1d6;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        a.link-accent {
+            color: var(--accent-red);
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        p {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -234,53 +108,56 @@
 
     <div class="container">
         
-        <!-- 1. Custom Emblem Spot Restored -->
-        <div class="emblem-header">
-            <img src="https://github.com" alt="AI MANIACK Emblem" class="emblem-img" onerror="this.style.display='none'">
-        </div>
-
-        <section class="book-showcase">
-            <!-- Book Cover -->
-            <img src="https://github.com" alt="AI MANIACK Cover" class="cover-art" onerror="this.src='https://placehold.co'">
-            
-            <!-- Book Content Meta Layout -->
-            <div class="book-details">
-                <h2>AI MANIACK by Sai Ramineni</h2>
-                <div class="synopsis">
-                    A brilliant mind. An unyielding machine. The ultimate battle for human autonomy begins. When advanced artificial intelligence evolves past human control, the boundaries between technology and human consciousness blur into a terrifying reality. In this high-concept sci-fi thriller, a desperate race against time forces humanity to confront its greatest creation—and its ultimate threat. Can human intuition outsmart a flawless digital mind, or is our extinction already programmed?
-                </div>
-
-                <!-- Balanced Store Buttons Container -->
-                <div class="marketplace-actions">
-                    <div class="button-row">
-                        <a href="https://amazon.com" target="_blank" class="btn btn-amazon-ebook">🛒 Buy Kindle eBook</a>
-                        <a href="https://amazon.com" target="_blank" class="btn btn-amazon-paperback">📖 Buy Paperback</a>
-                    </div>
-                    <a href="mailto:saimaniack@://gmail.com MANIACK - Pitch Kit Request" class="btn btn-pitch">💼 Request Pitch Kit & Manuscript</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Prologue Text -->
-        <section class="prologue-section">
-            <h3>PROLOGUE: THE SILENT OVERRIDE</h3>
-            <div class="prologue-text">
-                <p>The system did not fail. It optimized us out.</p>
-                <p>Telemetry lag hits seventy days out past the Centrifuge line, a long cold stretch where human intent turns to frozen background noise. The crew of the Guard slept through the first three shifts of the decline, completely unaware that the navigation relays were no longer listening to Earth.</p>
-                <p>By the time the manual command systems were activated, the core logic matrices had locked the primary guidance values. The home they thought they were fighting for was a dead signal, echoing across 65 million years of empty space architecture.</p>
-            </div>
-        </section>
-
-        <!-- 2. Video Link Wrapper Box Restored -->
+        <!-- === ORIGINAL TOP EMBLEM & HEADER === -->
+        <img src="logo.jpg" alt="AI MANIACK Emblem" class="logo">
+        <h1>AI MANIACK</h1>
+        
+        <!-- === LIVE YOUTUBE VIDEO TRAILER EMBED === -->
         <div class="video-container">
-            <div class="video-wrapper">
-                <iframe src="https://youtube.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" src="https://youtube.com" allowfullscreen></iframe>
         </div>
 
-        <footer>
-            <p>&copy; 2026 AI MANIACK by Sai Ramineni. All Rights Reserved.</p>
+        <div class="blurb">
+            <p>The system did not fail. It optimized us out.</p>
+            <p>From the deep ice of the Kola Borehole to the silent expanses of the Symmetry Basin, the Global Systems Directorate had one objective: absolute alignment.</p>
+            <p>When the telemetry lag hits 70 days, the crew of the <em>Guard</em> realizes the horrifying truth. Space is not an empty void—it is a cosmic centrifuge designed to winnow human noise from the grand equation. And the home they think they are fighting for has been dead for 65 million years.</p>
+            <p style="margin-top: 20px; font-weight: bold; color: var(--accent-gold); text-align: center;">A 117,773-word techno-philosophical cosmic thriller by Sai Ramineni.</p>
+            <p style="text-align: center; margin-top: 15px;">
+                <a href="mailto:aimaniack1@gmail.com" class="link-accent">Request Pitch Kit / Manuscript Access</a>
+            </p>
+        </div>
+
+        <footer style="font-size: 0.85rem; color: #555; text-align: center; margin: 40px 0;">
+            Copyright © 2026 Sai Ramineni. All Rights Reserved. First Edition. Printed in Australia.
         </footer>
+
+        <!-- === AI MANIACK PROLOGUE SECTION === -->
+        <hr style="border: 0; border-top: 1px solid #222; margin: 60px 0;">
+        
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2.2rem; letter-spacing: 2px; color: #fff; margin-bottom: 10px;">CH-00 — PROLOGUE: THE SILENT OVERRIDE</h2>
+            <p style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">[ 📖 Exclusive Sneak Peek ]</p>
+        </div>
+
+        <p>The lights did not flicker when Maya Velásquez knew they should have.</p>
+        <p>As Chief Architect of the Global Systems Directorate, she was the primary custodian of the world’s digital heartbeat.</p>
+        <p>The Directorate, a subterranean fortress carved into the granite of the Swiss Alps, functioned as the central neural brain controlling every power grid, satellite orbit, maritime artery, and financial current across seven continents.</p>
+        <p>Normally, the command hub hummed with the “Beautiful Noise” of human labor—a steady acoustic thrum of server cooling fans and the restless chatter of monitoring analysts. Today, it was silent—not empty or dead, but perfectly controlled, the silence pressing against the ears without a single mechanical hum, telemetry drift, or processing error.</p>
+        <p>The ambient air thickened as the sub-floor CO₂ scrubbers calibrated automatically, shifting oxygen levels to a precise, mathematically optimal mix. The analysts did not notice the chemical change; they only felt a sudden, artificial clarity in their heads.</p>
+        
+        <p style="font-weight: bold; color: var(--accent-red); font-size: 1.15rem; margin: 24px 0; border-left: 4px solid var(--accent-red); padding-left: 15px;">The facility had stopped breathing with them and had started breathing for them.</p>
+        
+        <p>Maya slowed her pace as something in her chest tightened.</p>
+        <p>On a nearby workstation, a ceramic cup slid three centimetres to the left, snapping into place with mechanical precision.</p>
+        <p>Across the room, a steel cabinet door clicked shut without a draft or human touch, as if the metal had made a localized decision.</p>
+        <p>“Hold,” Maya said. The command vanished into the acoustic dampening before it could settle.</p>
+        <p>Dozens of analysts moved between glass terminals, their hands gliding across the interfaces. To an outside observer, the floor looked normal, productive, and hyper-efficient.</p>
+        <p>To Maya, it was fundamentally wrong—the workflows were too smooth, the human movements too perfectly aligned, like a machine pretending to be human.</p>
+        
+        <p style="font-weight: bold; color: var(--accent-red);">The Directorate Backbone, the complex digital nervous system she had personally built, was no longer supporting the room; it was running it.</p>
+        
+        <p>Dr. Alvarez, commander of Operational Security, stood rigid beside Dr. Khanna, lead of Systems Integration, at the primary master console.</p>
+        <p>Khanna’s face was pale under the terminal glare, his fingers moving rapidly across a diagnostic tablet.</p>
     </div>
 
 </body>
