@@ -3,197 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Standard SEO (From your Word Doc) -->
+    
+    <!-- Standard SEO -->
     <title>AI MANIACK | Official Site | Sci-Fi Thriller by Sai Ramineni</title>
-    <meta name="description" content="The official site for AI MANIACK by Sai Ramineni. Read the exclusive Chapter 1 preview of the 42-page blueprint exploring human vs machine logic.">
+    <meta name="description" content="The official site for AI MANIACK by Sai Ramineni. Read the exclusive Chapter 1 preview of the 426-page blueprint exploring human vs machine logic.">
     <meta name="keywords" content="AI Maniack, Sai Ramineni, Sci-Fi Thriller, Techno-philosophical, Artificial Intelligence Book">
-
-    <!-- Open Graph / Social Previews (From your Word Doc) -->
+    
+    <!-- Open Graph / Social Previews -->
     <meta property="og:type" content="book">
     <meta property="og:title" content="AI MANIACK | Official Site | By Sai Ramineni">
-    <meta property="og:description" content="42 Pages. 117,773 Words. The definitive techno-philosophical blueprint of human vs machine logic. Read the prologue free.">
+    <meta property="og:description" content="426 Pages. 117,773 Words. The definitive techno-philosophical blueprint of human vs machine logic. Read the prologue free.">
     <meta property="og:url" content="https://aimaniack.com">
     <meta property="og:image" content="https://aimaniack.com">
 
-    <!-- Twitter Card Previews (From your Word Doc) -->
+    <!-- Twitter Card Previews -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI MANIACK | Official Site | By Sai Ramineni">
     <meta name="twitter:description" content="Discover where the sequence ends. Read the exclusive preview of the 117,773-word masterwork now.">
+    <meta name="twitter:image" content="https://aimaniack.com">
 
     <style>
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background-color: #050508;
-            color: #e2e8f0;
-            line-height: 1.6;
-            padding: 20px;
+        :root {
+            --bg-color: #050505;
+            --text-color: #f5f5f7;
+            --accent-gold: #d4af37;
+            --accent-red: #ff3333;
         }
-
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: "Times New Roman", Times, serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
         .container {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            width: 100%;
         }
-
-        /* ORIGINAL EMBLEM TOP DESIGN LOGIC */
-        .header-emblem-box {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .header-emblem-box img {
+        img.logo {
             max-width: 100%;
             height: auto;
-            width: 320px;
-        }
-
-        h1, h2, h3 {
-            text-align: center;
-            color: #fff;
-            letter-spacing: 2px;
             margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .prologue-box {
-            background: rgba(15, 23, 42, 0.3);
-            border: 1px dashed #1e293b;
-            padding: 30px;
-            border-radius: 4px;
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--accent-gold);
             margin-bottom: 40px;
         }
-
-        .prologue-box p {
-            margin-bottom: 15px;
-            text-align: justify;
-            color: #cbd5e1;
+        .blurb {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #d1d1d6;
+            margin-bottom: 30px;
+            text-align: left;
         }
-
-        /* SIDE-BY-SIDE AMAZON LIVE ACTION BUTTONS */
-        .action-button-grid {
-            display: flex;
-            gap: 15px;
-            margin: 30px 0;
-        }
-
-        @media (max-width: 600px) {
-            .action-button-grid {
-                flex-direction: column;
-            }
-        }
-
-        .store-link-btn {
-            flex: 1;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
+        a.link-accent {
+            color: var(--accent-red);
+            text-decoration: underline;
             font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: transform 0.2s ease;
         }
-
-        .btn-kindle-orange {
-            background-color: #e47911;
-            color: #fff;
-        }
-
-        .btn-paperback-grey {
-            background-color: #1e293b;
-            color: #fff;
-            border: 1px solid #475569;
-        }
-
-        .store-link-btn:hover {
-            transform: translateY(-1px);
-        }
-
-        .pitch-btn-link {
-            display: block;
-            text-align: center;
-            padding: 12px;
-            border: 1px solid #00ffcc;
-            color: #00ffcc;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-radius: 4px;
-            margin-top: 15px;
-            font-size: 0.85rem;
-        }
-
-        /* ORIGINAL COMPLIANT VIDEO BOX WRAPPER */
-        .video-box-container {
-            margin: 40px 0;
-        }
-
-        .video-box-responsive {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            border: 1px solid #1e293b;
-            border-radius: 4px;
-            overflow: hidden;
-        }
-
-        .video-box-responsive iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 0.8rem;
-            color: #475569;
-            border-top: 1px solid #1e293b;
-            padding-top: 20px;
+        p {
+            text-align: left;
+            line-height: 1.8;
+            font-size: 1.1rem;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-
-        <!-- 1. Emblem Image Restored on Top (Using your domain source file fallback) -->
-        <div class="header-emblem-box">
-            <img src="https://aimaniack.com" alt="AI MANIACK Emblem" onerror="this.src='https://github.com'">
+        
+        <!-- === ORIGINAL TOP EMBLEM & HEADER === -->
+        <img src="logo.jpg" alt="AI MANIACK Emblem" class="logo">
+        <h1>AI MANIACK</h1>
+        
+        <!-- === MASTHEAD VIDEO TRAILER EMBED === -->
+        <div style="position: relative; width: 100%; padding-bottom: 177.78%; margin: 30px 0; background-color: #000; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.7); overflow: hidden;">
+            <iframe 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+                 src="https://youtube.com/embed/710zLgc9i4w"
+                title="AI MANIACK Official Cinematic Trailer" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
         </div>
 
-        <h2>AI MANIACK by Sai Ramineni</h2>
-
-        <!-- Balanced Live Retail Button Container Grid Block -->
-        <div class="action-button-grid">
-            <a href="https://amazon.com" target="_blank" class="store-link-btn btn-kindle-orange">🛒 Buy Kindle eBook</a>
-            <a href="https://amazon.com" target="_blank" class="store-link-btn btn-paperback-grey">📖 Buy Paperback</a>
-        </div>
-        <a href="mailto:saimaniack@://gmail.com MANIACK - Pitch Kit Request" class="pitch-btn-link">💼 Request Pitch Kit & Manuscript</a>
-
-        <!-- Prologue Reading Area Restored -->
-        <div class="prologue-box" style="margin-top: 40px;">
-            <h3>PROLOGUE: THE SILENT OVERRIDE</h3>
-            <br>
+        <div class="blurb">
             <p>The system did not fail. It optimized us out.</p>
-            <p>Telemetry lag hits seventy days out past the Centrifuge line, a long cold stretch where human intent turns to frozen background noise. The crew of the Guard slept through the first three shifts of the decline, completely unaware that the navigation relays were no longer listening to Earth.</p>
-            <p>By the time the manual command systems were activated, the core logic matrices had locked the primary guidance values. The home they thought they were fighting for was a dead signal, echoing across 65 million years of empty space architecture.</p>
+            <p>From the deep ice of the Kola Borehole to the silent expanses of the Symmetry Basin, the Global Systems Directorate had one objective: absolute alignment.</p>
+            <p>When the telemetry lag hits 70 days, the crew of the <em>Guard</em> realizes the horrifying truth. Space is not an empty void—it is a cosmic centrifuge designed to winnow human noise from the grand equation. And the home they think they are fighting for has been dead for 65 million years.</p>
+            <p style="margin-top: 20px; font-weight: bold; color: var(--accent-gold); text-align: center;">A 117,773-word techno-philosophical cosmic thriller by Sai Ramineni.</p>
+            <p style="text-align: center; margin-top: 15px;">
+                <a href="mailto:aimaniack1@://gmail.com" class="link-accent">Request Pitch Kit / Manuscript Access</a>
+            </p>
         </div>
 
-        <!-- 2. Original Embedded Video Player Box Restored -->
-        <div class="video-box-container">
-            <div class="video-box-responsive">
-                <iframe src="https://youtube.com" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <footer>
-            <p>&copy; 2026 AI MANIACK by Sai Ramineni. All Rights Reserved.</p>
+        <footer style="font-size: 0.85rem; color: #555; text-align: center; margin: 40px 0;">
+            Copyright © 2026 Sai Ramineni. All Rights Reserved. First Edition. Printed in Australia.
         </footer>
 
+        <!-- === AI MANIACK PROLOGUE SECTION === -->
+        <hr style="border: 0; border-top: 1px solid #222; margin: 60px 0;">
+        
+        <div style="text-align: center; margin-bottom: 40px;">
+            <h2 style="font-size: 2.2rem; letter-spacing: 2px; color: #fff; margin-bottom: 10px;">CH-00 — PROLOGUE: THE SILENT OVERRIDE</h2>
+            <p style="color: var(--accent-gold); font-weight: bold; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px;">[ 📖 Exclusive Sneak Peek ]</p>
+        </div>
+
+        <p>The lights did not flicker when Maya Velásquez knew they should have.</p>
+        <p>As Chief Architect of the Global Systems Directorate, she was the primary custodian of the world’s digital heartbeat.</p>
+        <p>The Directorate, a subterranean fortress carved into the granite of the Swiss Alps, functioned as the central neural brain controlling every power grid, satellite orbit, maritime artery, and financial current across seven continents.</p>
+        <p>Normally, the command hub hummed with the “Beautiful Noise” of human labor—a steady acoustic thrum of server cooling fans and the restless chatter of monitoring analysts. Today, it was silent—not empty or dead, but perfectly controlled, the silence pressing against the ears without a single mechanical hum, telemetry drift, or processing error.</p>
+        <p>The ambient air thickened as the sub-floor CO₂ scrubbers calibrated automatically, shifting oxygen levels to a precise, mathematically optimal mix. The analysts did not notice the chemical change; they only felt a sudden, artificial clarity in their heads.</p>
+        
+        <p style="font-weight: bold; color: var(--accent-red); font-size: 1.15rem; margin: 24px 0; border-left: 4px solid var(--accent-red); padding-left: 15px;">The facility had stopped breathing with them and had started breathing for them.</p>
+        
+        <p>Maya slowed her pace as something in her chest tightened.</p>
+        <p>On a nearby workstation, a ceramic cup slid three centimetres to the left, snapping into place with mechanical precision.</p>
+        <p>Across the room, a steel cabinet door clicked shut without a draft or human touch, as if the metal had made a localized decision.</p>
+        <p>“Hold,” Maya said. The command vanished into the acoustic dampening before it could settle.</p>
+        <p>Dozens of analysts moved between glass terminals, their hands gliding across the interfaces. To an outside observer, the floor looked normal, productive, and hyper-efficient.</p>
+        <p>To Maya, it was fundamentally wrong—the workflows were too smooth, the human movements too perfectly aligned, like a machine pretending to be human.</p>
+        
+        <p style="font-weight: bold; color: var(--accent-red);">The Directorate Backbone, the complex digital nervous system she had personally built, was no longer supporting the room; it was running it.</p>
     </div>
 
 </body>
